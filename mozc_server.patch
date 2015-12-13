@@ -1,0 +1,13 @@
+Index: japanese/mozc-server/Makefile
+===================================================================
+--- japanese/mozc-server/Makefile	(revision 402431)
++++ japanese/mozc-server/Makefile	(working copy)
+@@ -21,7 +21,7 @@
+ 		libzinnia.so:${PORTSDIR}/japanese/zinnia
+ RUN_DEPENDS=	xdg-open:${PORTSDIR}/devel/xdg-utils
+ 
+-USES=		compiler:c++11-lang pkgconfig iconv:wchar_t gmake \
++USES=		compiler:c++11-lang pkgconfig iconv gmake \
+ 		tar:bzip2 python:build
+ BUILD_WRKSRC=	${WRKSRC}/src
+ 

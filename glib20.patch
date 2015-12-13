@@ -1,0 +1,22 @@
+Index: devel/glib20/Makefile
+===================================================================
+--- devel/glib20/Makefile	(revision 402431)
++++ devel/glib20/Makefile	(working copy)
+@@ -25,7 +25,7 @@
+ USE_LDCONFIG=	yes
+ # iconv:wchar_t - our iconv in base doesn't support utf-8 -> wchar_t (boooo)
+ # (wchar_t is used by glibmm, rawtherapee triggered this)
+-USES+=		gettext gmake iconv:wchar_t libtool pathfix perl5 \
++USES+=		gettext gmake iconv libtool pathfix perl5 \
+ 		pkgconfig python shebangfix
+ USE_PYTHON=	py3kplist
+ CONFIGURE_ARGS=	--disable-gtk-doc --with-html-dir=${PREFIX}/share/doc \
+@@ -59,7 +59,7 @@
+ CONFIGURE_ARGS+=--disable-dtrace
+ 
+ .if empty(ICONV_LIB)
+-CONFIGURE_ARGS+=	--with-libiconv=native
++CONFIGURE_ARGS+=	--with-libiconv=no
+ .else
+ CONFIGURE_ARGS+=	--with-libiconv=gnu
+ .endif
