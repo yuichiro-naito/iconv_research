@@ -1,0 +1,12 @@
+/usr/ports/cad/tkgate
+/usr/ports/devel/libhtp
+/usr/ports/editors/calligra
+/usr/ports/japanese/jd
+/usr/ports/lang/ghc
+/usr/ports/mail/mutt
+/usr/ports/math/hs-Agda
+/usr/ports/security/suricata
+/usr/ports/textproc/ctpp2
+/usr/ports/www/newsbeuter
+/usr/ports/x11-wm/icewm
+/usr/ports/x11-wm/ede
